@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "nomas": {
+      "url": "https://mcp.nomas.fyi/mcp",
+      "headers": {
+        "X-API-Key": "${NOMAS_API_KEY}"
+      }
+    }
+  }
+}

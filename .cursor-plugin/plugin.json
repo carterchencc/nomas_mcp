@@ -1,0 +1,33 @@
+{
+  "name": "nomas-research",
+  "version": "1.0.0",
+  "description": "Query structured SEC data over MCP: company facts, parsed filings, insider trades, 13F holdings, and FTD.",
+  "author": {
+    "name": "Nomas",
+    "email": "carterchen1991@hotmail.com"
+  },
+  "homepage": "https://nomas.fyi",
+  "repository": "https://github.com/carterchencc/nomas_mcp",
+  "license": "MIT",
+  "keywords": [
+    "sec",
+    "finance",
+    "filings",
+    "mcp",
+    "company-facts",
+    "13f",
+    "insider-trading"
+  ],
+  "logo": "assets/logo.png",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "NOMAS_API_KEY": {
+        "type": "string",
+        "title": "Nomas API key",
+        "description": "Named API key from https://nomas.fyi/AccountManagement. Sent as X-API-Key. Do not commit this value."
+      }
+    },
+    "required": ["NOMAS_API_KEY"]
+  }
+}
