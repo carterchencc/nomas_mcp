@@ -48,6 +48,16 @@ assets/logo.png              Marketplace logotype
 skills/nomas-sec-research    When to call which tools
 ```
 
+## Official MCP Registry
+
+Metadata is in `server.json` (`io.github.carterchencc/nomas`). Publish with:
+
+```bash
+mcp-publisher login github
+mcp-publisher publish
+```
+
 ## License
+
 
 MIT for this plugin package. Nomas data and the hosted server remain a Nomas service.
