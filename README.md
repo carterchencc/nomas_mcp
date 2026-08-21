@@ -1,6 +1,6 @@
 # Nomas Research MCP
 
-Hosted [Model Context Protocol](https://modelcontextprotocol.io) server for [Nomas](https://nomas.fyi): structured SEC data, not raw EDGAR HTML.
+Hosted [Model Context Protocol](https://modelcontextprotocol.io) server for [Nomas](https://nomas.fyi): parsed SEC events keyed by CIK and CUSIP — 8-K items, Form 144, Form D, FTD. Not ticker quotes. Not EDGAR HTML.
 
 - Endpoint: `https://mcp.nomas.fyi/mcp` (Streamable HTTP)
 - Registry: [`io.github.carterchencc/nomas`](https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.carterchencc/nomas)
@@ -10,14 +10,11 @@ This public repo is the registry + Cursor plugin package (manifest, MCP URL, log
 
 ## What it does
 
-Read-only tools for:
+Read-only tools. Tickers are reused; start with `lookup_issuer` (CIK + live CUSIPs). Then:
 
-- Company search and detail
-- XBRL company facts
-- Parsed filings (8-K, 10-K/Q, 13D, 144, D, 14A, S-1/S-3)
-- Insider trades (Forms 3/4/5)
-- 13F managers and holdings
-- Failure-to-deliver (FTD)
+- Mixed issuer tape: parsed 8-K items, Form 144 proposed sales, Form D, 13D, periodic, proxy, offerings
+- FTD series by CUSIP (do not collapse CUSIPs)
+- XBRL company facts, Form 4 insider trades, 13F-by-manager when those datasets are the question
 
 ## Install
 
