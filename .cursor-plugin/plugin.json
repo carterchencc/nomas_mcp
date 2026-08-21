@@ -1,7 +1,7 @@
 {
   "name": "nomas-research",
   "version": "1.0.0",
-  "description": "Query structured SEC data over MCP: company facts, parsed filings, insider trades, 13F holdings, and FTD.",
+  "description": "Parsed SEC events by CIK/CUSIP: 8-K items, Form 144, Form D, FTD. Not EDGAR HTML.",
   "author": {
     "name": "Nomas",
     "email": "carterchen1991@hotmail.com"
@@ -16,7 +16,10 @@
     "mcp",
     "company-facts",
     "13f",
-    "insider-trading"
+    "insider-trading",
+    "cusip",
+    "form-144",
+    "ftd"
   ],
   "logo": "assets/logo.png",
   "variables": {
