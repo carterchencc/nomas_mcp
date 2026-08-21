@@ -1,8 +1,12 @@
-# Nomas Research (Cursor plugin)
+# Nomas Research MCP
 
-Cursor plugin for [Nomas](https://nomas.fyi): structured SEC data over MCP.
+Hosted [Model Context Protocol](https://modelcontextprotocol.io) server for [Nomas](https://nomas.fyi): structured SEC data, not raw EDGAR HTML.
 
-This repository is the **plugin package** (manifest, MCP URL, logo). The MCP server is hosted at `https://mcp.nomas.fyi/mcp`. It is not the Nomas product source.
+- Endpoint: `https://mcp.nomas.fyi/mcp` (Streamable HTTP)
+- Registry: [`io.github.carterchencc/nomas`](https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.carterchencc/nomas)
+- Docs: [nomas.fyi/research/mcp](https://nomas.fyi/research/mcp)
+
+This public repo is the registry + Cursor plugin package (manifest, MCP URL, logo). It is not the Nomas product source.
 
 ## What it does
 
@@ -42,6 +46,7 @@ Free, Pro, and API plan limits on nomas.fyi still apply.
 ## Layout
 
 ```
+server.json                  Official MCP Registry metadata
 .cursor-plugin/plugin.json   Cursor marketplace manifest
 mcp.json                     Streamable HTTP MCP endpoint
 assets/logo.png              Marketplace logotype
