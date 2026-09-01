@@ -3,7 +3,7 @@
   "name": "io.github.carterchencc/nomas",
   "title": "Nomas Research",
   "description": "Parsed SEC events by CIK/CUSIP: 8-K items, Form 144, Form D, FTD. Not EDGAR HTML.",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "websiteUrl": "https://nomas.fyi/research/mcp",
   "repository": {
     "url": "https://github.com/carterchencc/nomas_mcp",
@@ -12,12 +12,12 @@
   },
   "icons": [
     {
-      "src": "https://nomas.fyi/images/icon-192.png",
+      "src": "https://raw.githubusercontent.com/carterchencc/nomas_mcp/main/assets/icon-192.png",
       "mimeType": "image/png",
       "sizes": ["192x192"]
     },
     {
-      "src": "https://nomas.fyi/images/icon-512.png",
+      "src": "https://raw.githubusercontent.com/carterchencc/nomas_mcp/main/assets/logo.png",
       "mimeType": "image/png",
       "sizes": ["512x512"]
     }
